@@ -1,134 +1,353 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Port0folio</title>
-
-    <!-- icon -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akram Abdul Fattah - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/feather-icons"></script>
-
-    <!-- my font Poppins -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Rubik+Glitch+Pop&display=swap"
-      rel="stylesheet"
-    />
-
-    <!-- my css -->
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <nav class="navbar">
-      <div class="nav-logo">
-        <span class="star">✦</span>
-        <a href="#">My Portofolio <span>Akram</span></a>
-      </div>
-      <div class="nav-item">
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">My Skills</a>
-        <a href="#">Contact Me</a>
-      </div>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="star">✦</span>
+                <a href="#home">Akram<span>.dev</span></a>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
     </nav>
-    <main>
-      <div id="home" class="hero">
-        <div class="intro">
-          <h1>Hi, My name is Akram Abdul Fattah</h1>
-          <h1>i’m Web developer & UI/UX Designer</h1>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <div class="hero-shape shape-1"></div>
+            <div class="hero-shape shape-2"></div>
+            <div class="hero-shape shape-3"></div>
         </div>
-      </div>
-      
-      <!--about me-->
-      <div id="about" class="about">
-         <div class="hero-img">
-          <img src="aset/uruma.jpg" alt="Akram Abdul Fattah" />
+        <div class="container">
+            <div class="hero-wrapper">
+                <div class="hero-content">
+                    <div class="hero-tag">
+                        <span class="tag-icon">👋</span>
+                        <span class="tag-text">Welcome to my portfolio</span>
+                    </div>
+                    <h1 class="hero-title">
+                        <span class="title-line">Hi, I'm</span>
+                        <span class="title-name">Akram Abdul Fattah</span>
+                    </h1>
+                    <p class="hero-description">
+                        Passionate student from SMK Taruna Bhakti creating beautiful and functional digital experiences with modern technologies
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#projects" class="cta-primary">
+                            <span>View My Work</span>
+                            <i data-feather="arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="cta-secondary">
+                            <span>Let's Talk</span>
+                            <i data-feather="message-circle"></i>
+                        </a>
+                    </div>
+                    <div class="hero-social">
+                        <a href="#" class="social-link">
+                            <i data-feather="github"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i data-feather="instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-profile">
+                    <div class="profile-image">
+                        <img src="aset/uruma.jpg" alt="Akram Abdul Fattah">
+                        <div class="profile-ring"></div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <h2>About me</h2>
-        <p>
-          Saya pelajar dari SMK Taruna Bhakti yang tertarik dengan dunia web
-          development dan UI/UX design. Saya suka mempelajari cara
-          menggabungkan teknologi dan desain agar bisa menciptakan tampilan
-          yang enak dilihat dan nyaman digunakan.
-        </p>
-      </div>
+    </section>
 
-      <!--my skills-->
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Get To Know Me</span>
+                <h2 class="section-title">About Me</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-image">
+                    <div class="image-wrapper">
+                        <img src="aset/uruma.jpg" alt="Akram Abdul Fattah">
+                    </div>
+                </div>
+                <div class="about-content">
+                    <div class="badge">
+                        <i data-feather="code"></i>
+                        <span>Student & Developer</span>
+                    </div>
+                    <h3>Hi there! 👋</h3>
+                    <p>Saya pelajar dari <strong>SMK Taruna Bhakti</strong> yang memiliki passion dalam dunia web development dan UI/UX design.</p>
+                    <p>Saya senang mempelajari cara menggabungkan teknologi dan desain untuk menciptakan tampilan yang menarik dan pengalaman pengguna yang optimal.</p>
+                    
+                    <div class="stats">
+                        <div class="stat-item">
+                            <i data-feather="award"></i>
+                            <div class="stat-info">
+                                <h4>10+</h4>
+                                <p>Tech Skills</p>
+                            </div>
+                        </div>
+                        <div class="stat-item">
+                            <i data-feather="folder"></i>
+                            <div class="stat-info">
+                                <h4>3+</h4>
+                                <p>Projects</p>
+                            </div>
+                        </div>
+                        <div class="stat-item">
+                            <i data-feather="coffee"></i>
+                            <div class="stat-info">
+                                <h4>∞</h4>
+                                <p>Coffee Cups</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-      <div id="skills" class="skills">
-  <h2>My skills</h2>
-  <div class="skills-container">
-    <img src="aset/css.png" alt="aset" />
-    <img src="aset/figma.png" alt="aset" />
-    <img src="aset/html.png" alt="aset" />
-    <img src="aset/illustrator.png" alt="aset" />
-    <img src="aset/java-script.png" alt="aset" />
-    <img src="aset/photoshop.png" alt="aset" />
-    <img src="aset/php.png" alt="aset" />
-    <img src="aset/python.png" alt="aset" />
-    <img src="aset/typescript.png" alt="aset" />
-    <img src="aset/vscode.png" alt="aset" />
-  </div>
-</div>
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">My Expertise</span>
+                <h2 class="section-title">Tech Stack</h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <img src="aset/html.png" alt="HTML">
+                    <span>HTML</span>
+                </div>
+                <div class="skill-card">
+                    <img src="aset/css.png" alt="CSS">
+                    <span>CSS</span>
+                </div>
+                <div class="skill-card">
+                    <img src="aset/java-script.png" alt="JavaScript">
+                    <span>JavaScript</span>
+                </div>
+                <div class="skill-card">
+                    <img src="aset/typescript.png" alt="TypeScript">
+                    <span>TypeScript</span>
+                </div>
+                <div class="skill-card">
+                    <img src="aset/php.png" alt="PHP">
+                    <span>PHP</span>
+                </div>
+                <div class="skill-card">
+                    <img src="aset/python.png" alt="Python">
+                    <span>Python</span>
+                </div>
+                <div class="skill-card">
+                    <img src="aset/figma.png" alt="Figma">
+                    <span>Figma</span>
+                </div>
+                <div class="skill-card">
+                    <img src="aset/illustrator.png" alt="Illustrator">
+                    <span>Illustrator</span>
+                </div>
+                <div class="skill-card">
+                    <img src="aset/photoshop.png" alt="Photoshop">
+                    <span>Photoshop</span>
+                </div>
+                <div class="skill-card">
+                    <img src="aset/vscode.png" alt="VS Code">
+                    <span>VS Code</span>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<!-- my projects -->
-<div id="projects" class="projects">
-  <h2>~My Projects~</h2>
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">My Work</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-desc">Here are some of my recent projects that showcase my skills and creativity</p>
+            </div>
+            <div class="projects-wrapper">
+                <!-- Project 1 -->
+                <div class="project-item">
+                    <div class="project-image-wrapper">
+                        <div class="project-image">
+                            <img src="aset/stopbullying.jpg" alt="Stop Bullying Campaign">
+                            <div class="image-overlay"></div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">
+                            <i data-feather="image"></i>
+                            <span>Graphic Design</span>
+                        </div>
+                        <h3 class="project-title">Stop Bullying Campaign</h3>
+                        <p class="project-desc">Social awareness poster design dengan visual yang kuat dan pesan anti-bullying yang impactful. Menggunakan tipografi bold dan warna kontras untuk menarik perhatian.</p>
+                        <div class="project-tags">
+                            <span class="tag">Adobe Photoshop</span>
+                            <span class="tag">Poster Design</span>
+                            <span class="tag">Social Campaign</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i data-feather="external-link"></i>
+                                <span>View Project</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
 
-  <div class="projects-container">
+                <!-- Project 2 -->
+                <div class="project-item reverse">
+                    <div class="project-image-wrapper">
+                        <div class="project-image">
+                            <img src="aset/sasuke.jpg" alt="Character Illustration">
+                            <div class="image-overlay"></div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">
+                            <i data-feather="pen-tool"></i>
+                            <span>Illustration</span>
+                        </div>
+                        <h3 class="project-title">Character Illustration</h3>
+                        <p class="project-desc">Vector illustration project menggunakan Adobe Illustrator dengan teknik tracing dan coloring yang detail. Fokus pada detail wajah dan pencahayaan yang dramatis.</p>
+                        <div class="project-tags">
+                            <span class="tag">Adobe Illustrator</span>
+                            <span class="tag">Vector Art</span>
+                            <span class="tag">Character Design</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i data-feather="external-link"></i>
+                                <span>View Project</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
 
-    <div class="project-card">
-      <img src="aset/stopbullying.jpg" alt="aset">
-      <h3>Website Portfolio</h3>
-      <p>projek poster stop bullying</p>
-      <a href="#" class="btn-project">View</a>
-    </div>
+                <!-- Project 3 -->
+                <div class="project-item">
+                    <div class="project-image-wrapper">
+                        <div class="project-image">
+                            <img src="aset/projek3.jpg" alt="Landing Page">
+                            <div class="image-overlay"></div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">
+                            <i data-feather="monitor"></i>
+                            <span>Web Design</span>
+                        </div>
+                        <h3 class="project-title">Digital Landing Page</h3>
+                        <p class="project-desc">Responsive landing page dengan modern design dan smooth user experience untuk produk digital. Menggunakan HTML, CSS, dan JavaScript untuk interaksi yang engaging.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML/CSS</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Responsive Design</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i data-feather="external-link"></i>
+                                <span>View Project</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="project-card">
-      <img src="aset/sasuke.jpg" alt="aset">
-      <h3>UI/UX App Design</h3>
-      <p>projek adobe illustrator</p>
-      <a href="#" class="btn-project">View</a>
-    </div>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Get In Touch</span>
+                <h2 class="section-title">Contact Me</h2>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Let's work together!</h3>
+                    <p>Feel free to reach out if you have any questions or want to collaborate on a project.</p>
+                    
+                    <div class="info-list">
+                        <div class="info-item">
+                            <i data-feather="mail"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>akram@example.com</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i data-feather="instagram"></i>
+                            <div>
+                                <h4>Instagram</h4>
+                                <p>@akram.uiux</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i data-feather="phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+62 812-3456-7890</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-    <div class="project-card">
-      <img src="aset/projek3.jpg" alt="Project 3">
-      <h3>Landing Page</h3>
-      <p>Landing page responsif untuk produk digital.</p>
-      <a href="#" class="btn-project">View Project</a>
-    </div>
+                <form class="contact-form" action="https://formspree.io/f/xnnkzryv" method="POST">
+                    <div class="input-group">
+                        <label>Your Name</label>
+                        <input type="text" name="name" placeholder="John Doe" required>
+                    </div>
+                    <div class="input-group">
+                        <label>Email Address</label>
+                        <input type="email" name="email" placeholder="john@example.com" required>
+                    </div>
+                    <div class="input-group">
+                        <label>Your Message</label>
+                        <textarea name="message" placeholder="Tell me about your project..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
 
-  </div>
-</div>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Akram Abdul Fattah. Made with 💙</p>
+        </div>
+    </footer>
 
-<!-- contact me -->
-<div id="contact" class="contact">
-  <h2>Contact Me</h2>
-
-  <div class="contact-container">
-
-    <!-- Contact Info -->
-    <div class="contact-info">
-      <p><i data-feather="mail"></i> akram@example.com</p>
-      <p><i data-feather="instagram"></i> @akram.uiux</p>
-      <p><i data-feather="phone"></i> +62 812-3456-7890</p>
-    </div>
-
-    <!-- Contact Form -->
-    <form class="contact-form">
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Email Address" required />
-      <textarea placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-
-  </div>
-</div>
-
-
-    <script>
-      feather.replace();
-    </script>
-  </body>
+    <script src="js/script.js"></script>
+    <script>feather.replace();</script>
+</body>
 </html>
