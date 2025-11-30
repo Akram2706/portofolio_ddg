@@ -92,7 +92,7 @@
             </div>
             <div class="about-grid">
                 <div class="about-image">
-                    <div class="image-wrapper">
+                    <div class="about-image-container">
                         <img src="aset/uruma.jpg" alt="Akram Abdul Fattah">
                     </div>
                 </div>
@@ -137,8 +137,7 @@
     <section id="skills" class="skills">
         <div class="container">
             <div class="section-header">
-                <span class="section-label">My Expertise</span>
-                <h2 class="section-title">Tech Stack</h2>
+                <h2 class="section-title">Skills</h2>
             </div>
             <div class="skills-grid">
                 <div class="skill-card">
@@ -198,7 +197,7 @@
                 <div class="project-item">
                     <div class="project-image-wrapper">
                         <div class="project-image">
-                            <img src="aset/stopbullying.jpg" alt="Stop Bullying Campaign">
+                            <img src="aset/Boat Smartwatch.jpg" alt="jam tangan">
                             <div class="image-overlay"></div>
                         </div>
                     </div>
@@ -209,16 +208,11 @@
                         </div>
                         <h3 class="project-title">Stop Bullying Campaign</h3>
                         <p class="project-desc">Social awareness poster design dengan visual yang kuat dan pesan anti-bullying yang impactful. Menggunakan tipografi bold dan warna kontras untuk menarik perhatian.</p>
-                        <div class="project-tags">
-                            <span class="tag">Adobe Photoshop</span>
-                            <span class="tag">Poster Design</span>
-                            <span class="tag">Social Campaign</span>
-                        </div>
                         <div class="project-links">
-                            <a href="#" class="project-link">
+                            <button class="project-link" onclick="openModal('aset/Boat Smartwatch.jpg')">
                                 <i data-feather="external-link"></i>
                                 <span>View Project</span>
-                            </a>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -227,7 +221,7 @@
                 <div class="project-item reverse">
                     <div class="project-image-wrapper">
                         <div class="project-image">
-                            <img src="aset/sasuke.jpg" alt="Character Illustration">
+                            <img src="aset/NIVEA.jpg" alt="">
                             <div class="image-overlay"></div>
                         </div>
                     </div>
@@ -238,16 +232,11 @@
                         </div>
                         <h3 class="project-title">Character Illustration</h3>
                         <p class="project-desc">Vector illustration project menggunakan Adobe Illustrator dengan teknik tracing dan coloring yang detail. Fokus pada detail wajah dan pencahayaan yang dramatis.</p>
-                        <div class="project-tags">
-                            <span class="tag">Adobe Illustrator</span>
-                            <span class="tag">Vector Art</span>
-                            <span class="tag">Character Design</span>
-                        </div>
                         <div class="project-links">
-                            <a href="#" class="project-link">
+                            <button class="project-link" onclick="openModal('aset/NIVEA.jpg')">
                                 <i data-feather="external-link"></i>
                                 <span>View Project</span>
-                            </a>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -256,7 +245,7 @@
                 <div class="project-item">
                     <div class="project-image-wrapper">
                         <div class="project-image">
-                            <img src="aset/projek3.jpg" alt="Landing Page">
+                            <img src="aset/Starbucks.jpg" alt="Landing Page">
                             <div class="image-overlay"></div>
                         </div>
                     </div>
@@ -267,16 +256,11 @@
                         </div>
                         <h3 class="project-title">Digital Landing Page</h3>
                         <p class="project-desc">Responsive landing page dengan modern design dan smooth user experience untuk produk digital. Menggunakan HTML, CSS, dan JavaScript untuk interaksi yang engaging.</p>
-                        <div class="project-tags">
-                            <span class="tag">HTML/CSS</span>
-                            <span class="tag">JavaScript</span>
-                            <span class="tag">Responsive Design</span>
-                        </div>
                         <div class="project-links">
-                            <a href="#" class="project-link">
+                            <button class="project-link" onclick="openModal('aset/Starbucks.jpg')">
                                 <i data-feather="external-link"></i>
                                 <span>View Project</span>
-                            </a>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -347,7 +331,13 @@
         </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <!-- Modal untuk menampilkan gambar -->
+    <div id="imageModal" class="modal">
+        <span class="modal-close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <script src="src/index.js"></script>
     <script>feather.replace();</script>
 </body>
 </html>
