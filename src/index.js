@@ -10,7 +10,7 @@ if (hamburger && navMenu) {
         hamburger.classList.toggle('active');
         navMenu.classList.toggle('active');
     });
-
+    
     // Close menu when clicking outside
     document.addEventListener('click', function(e) {
         if (!navMenu.contains(e.target) && !hamburger.contains(e.target)) {
