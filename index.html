@@ -7,8 +7,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <script src="https://unpkg.com/feather-icons"></script>
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/feather-icons"></script>
 </head>
 <body>
     <!-- Navbar -->
@@ -20,7 +20,7 @@
             </div>
             <div class="nav-menu" id="navMenu">
                 <a href="#home">Home</a>
-                <a href="#about">About</a>
+                <a href="#about">About Me</a>
                 <a href="#skills">Skills</a>
                 <a href="#projects">Projects</a>
                 <a href="#contact">Contact</a>
@@ -54,9 +54,9 @@
                             <span>View My Work</span>
                             <i data-feather="arrow-right"></i>
                         </a>
-                        <a href="#contact" class="cta-secondary">
-                            <span>Let's Talk</span>
-                            <i data-feather="message-circle"></i>
+                        <a href="aset/uruma.jpg" download="Akram-Photo.jpg" class="cta-secondary">
+                            <span>Download Photo</span>
+                            <i data-feather="download"></i>
                         </a>
                     </div>
                     <div class="hero-social">
@@ -71,7 +71,6 @@
                 <div class="hero-profile">
                     <div class="profile-image">
                         <img src="aset/uruma.jpg" alt="Akram Abdul Fattah">
-                        <div class="profile-ring"></div>
                     </div>
                 </div>
             </div>
@@ -81,6 +80,9 @@
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+            </div>
             <div class="about-grid">
                 <div class="about-image">
                     <div class="about-image-container">
@@ -106,13 +108,6 @@
                                 <p>Projects</p>
                             </div>
                         </div>
-                        <div class="stat-item">
-                            <i data-feather="coffee"></i>
-                            <div class="stat-info">
-                                <h4>∞</h4>
-                                <p>Coffee Cups</p>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -123,7 +118,7 @@
     <section id="skills" class="skills">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Skills</h2>
+                <h2 class="section-title">my Skills</h2>
             </div>
             <div class="skills-grid">
                 <div class="skill-card">
@@ -174,16 +169,14 @@
     <section id="projects" class="projects">
         <div class="container">
             <div class="section-header">
-                <span class="section-label">My Work</span>
-                <h2 class="section-title">Featured Projects</h2>
-                <p class="section-desc">Here are some of my recent projects that showcase my skills and creativity</p>
+                <h2 class="section-title">my Projects</h2>
             </div>
             <div class="projects-wrapper">
                 <!-- Project 1 -->
                 <div class="project-item">
                     <div class="project-image-wrapper">
                         <div class="project-image">
-                            <img src="aset/Boat Smartwatch.jpg" alt="jam tangan">
+                            <img src="aset/Boat Smartwatch.jpg" alt="Boat Smartwatch">
                             <div class="image-overlay"></div>
                         </div>
                     </div>
@@ -192,8 +185,8 @@
                             <i data-feather="image"></i>
                             <span>Graphic Design</span>
                         </div>
-                        <h3 class="project-title">Stop Bullying Campaign</h3>
-                        <p class="project-desc">Social awareness poster design dengan visual yang kuat dan pesan anti-bullying yang impactful. Menggunakan tipografi bold dan warna kontras untuk menarik perhatian.</p>
+                        <h3 class="project-title">Boat Smartwatch Pro</h3>
+                        <p class="project-desc">Product advertisement design untuk smartwatch dengan konsep modern dan teknologi canggih. Menampilkan fitur SpO2 monitoring dan water resistant dengan visual yang clean dan profesional.</p>
                         <div class="project-links">
                             <button class="project-link" onclick="openModal('aset/Boat Smartwatch.jpg')">
                                 <i data-feather="external-link"></i>
@@ -207,17 +200,17 @@
                 <div class="project-item reverse">
                     <div class="project-image-wrapper">
                         <div class="project-image">
-                            <img src="aset/NIVEA.jpg" alt="">
+                            <img src="aset/NIVEA.jpg" alt="NIVEA Product">
                             <div class="image-overlay"></div>
                         </div>
                     </div>
                     <div class="project-content">
                         <div class="project-category">
-                            <i data-feather="pen-tool"></i>
-                            <span>Illustration</span>
+                            <i data-feather="image"></i>
+                            <span>Product Design</span>
                         </div>
-                        <h3 class="project-title">Character Illustration</h3>
-                        <p class="project-desc">Vector illustration project menggunakan Adobe Illustrator dengan teknik tracing dan coloring yang detail. Fokus pada detail wajah dan pencahayaan yang dramatis.</p>
+                        <h3 class="project-title">NIVEA Skincare Campaign</h3>
+                        <p class="project-desc">Creative product photography dan advertising design untuk NIVEA skincare products. Menggunakan lighting yang soft dan komposisi yang menarik untuk menonjolkan kualitas produk.</p>
                         <div class="project-links">
                             <button class="project-link" onclick="openModal('aset/NIVEA.jpg')">
                                 <i data-feather="external-link"></i>
@@ -231,17 +224,17 @@
                 <div class="project-item">
                     <div class="project-image-wrapper">
                         <div class="project-image">
-                            <img src="aset/Starbucks.jpg" alt="Landing Page">
+                            <img src="aset/Starbucks.jpg" alt="Starbucks Design">
                             <div class="image-overlay"></div>
                         </div>
                     </div>
                     <div class="project-content">
                         <div class="project-category">
-                            <i data-feather="monitor"></i>
-                            <span>Web Design</span>
+                            <i data-feather="coffee"></i>
+                            <span>Brand Design</span>
                         </div>
-                        <h3 class="project-title">Digital Landing Page</h3>
-                        <p class="project-desc">Responsive landing page dengan modern design dan smooth user experience untuk produk digital. Menggunakan HTML, CSS, dan JavaScript untuk interaksi yang engaging.</p>
+                        <h3 class="project-title">Starbucks Promotional Design</h3>
+                        <p class="project-desc">Creative promotional design untuk Starbucks dengan konsep fresh dan modern. Menggabungkan brand identity Starbucks dengan visual yang eye-catching untuk meningkatkan brand awareness.</p>
                         <div class="project-links">
                             <button class="project-link" onclick="openModal('aset/Starbucks.jpg')">
                                 <i data-feather="external-link"></i>
@@ -258,7 +251,6 @@
     <section id="contact" class="contact">
         <div class="container">
             <div class="section-header">
-                <span class="section-label">Get In Touch</span>
                 <h2 class="section-title">Contact Me</h2>
             </div>
             <div class="contact-grid">

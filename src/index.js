@@ -180,8 +180,6 @@ document.addEventListener('keydown', function(e) {
 const contactForm = document.querySelector('.contact-form');
 if (contactForm) {
     contactForm.addEventListener('submit', function(e) {
-        // Form akan di-submit ke Formspree
-        // Setelah submit berhasil, reset form
         setTimeout(() => {
             this.reset();
             

@@ -97,6 +97,10 @@ body {
   position: relative;
 }
 
+.nav-menu a.active {
+  color: var(--primary);
+}
+
 .nav-menu a::after {
   content: '';
   position: absolute;
@@ -108,10 +112,13 @@ body {
   transition: width 0.3s;
 }
 
-.nav-menu a:hover,
-.nav-menu a:hover::after {
-  color: var(--primary);
+.nav-menu a:hover::after,
+.nav-menu a.active::after {
   width: 100%;
+}
+
+.nav-menu a:hover {
+  color: var(--primary);
 }
 
 .hamburger {
@@ -228,9 +235,10 @@ body {
   display: block;
   font-size: 3.5rem;
   font-weight: 800;
-  background: linear-gradient(135deg, var(--light) 0%, var(--primary) 100%);
+  background: linear-gradient(135deg, #ffffff 0%, #3b82f6 50%, #60a5fa 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  background-clip: text;
   line-height: 1.2;
 }
 
@@ -343,24 +351,6 @@ body {
 }
 
 .profile-ring {
-  position: absolute;
-  inset: -30px;
-  border-radius: 50%;
-  border: 2px solid rgba(59, 130, 246, 0.2);
-  z-index: 1;
-}
-
-.profile-ring::before {
-  content: '';
-  position: absolute;
-  inset: -15px;
-  border-radius: 50%;
-  border: 1px solid rgba(59, 130, 246, 0.1);
-  z-index: -1;
-}
-
-.profile-ring::after {
-  content: '';
   display: none;
 }
 
@@ -370,6 +360,14 @@ body {
 }
 
 /* ========== SECTION HEADER ========== */
+section {
+  scroll-margin-top: 70px;
+}
+
+section#home {
+  scroll-margin-top: 0;
+}
+
 .section-header {
   text-align: center;
   margin-bottom: 4rem;
@@ -400,8 +398,13 @@ body {
 
 /* ========== ABOUT SECTION ========== */
 .about {
-  padding: 5rem 0;
+  padding: 3rem 0 4rem 0;
   background: var(--dark);
+  margin: 0;
+}
+
+.about .container {
+  max-width: 1300px;
 }
 
 .about-grid {
@@ -481,7 +484,7 @@ body {
 
 .stats {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
   margin-top: 2rem;
 }
@@ -518,9 +521,9 @@ body {
 
 /* ========== SKILLS SECTION ========== */
 .skills {
-  padding: 8rem 0 5rem 0;
+  padding: 3rem 0 4rem 0;
   background: var(--dark-light);
-  margin-top: 70px;
+  margin: 0;
 }
 
 .skills-grid {
@@ -560,7 +563,7 @@ body {
 
 /* ========== PROJECTS SECTION ========== */
 .projects {
-  padding: 5rem 0;
+  padding: 3rem 0 4rem 0;
   background: var(--dark);
 }
 
@@ -702,7 +705,7 @@ body {
 
 /* ========== CONTACT SECTION ========== */
 .contact {
-  padding: 5rem 0;
+  padding: 3rem 0 4rem 0;
   background: var(--dark-light);
 }
 
